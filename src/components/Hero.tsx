@@ -29,7 +29,7 @@ export function Hero() {
           <i className="font-light">Побеждай.</i>
         </h1>
         <p className="font-mono text-sm sm:text-base text-foreground/60 text-balance mt-8 max-w-[440px] mx-auto">
-          Классический survival-сервер Minecraft — без доната, без читов. Только честная игра и крутое сообщество.
+          Привет! Заходи на мой сервер по Minecraft — поддерживаются версии с 1.16.5 до 1.20.
         </p>
 
         <button
