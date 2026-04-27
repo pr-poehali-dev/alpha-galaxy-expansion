@@ -32,21 +32,35 @@ export function Hero() {
           Привет! Заходи на мой сервер по Minecraft — поддерживаются версии с 1.16.5 до 1.20.
         </p>
 
-        <button
-          onClick={copyIP}
-          onMouseEnter={() => setHovering(true)}
-          onMouseLeave={() => setHovering(false)}
-          className="mt-10 mx-auto flex items-center gap-3 border border-border bg-white/5 hover:bg-white/10 transition-colors duration-200 px-5 py-3 font-mono text-sm sm:text-base"
-        >
-          <Icon name="Server" size={16} className="text-primary" />
-          <span className="text-foreground/80">{SERVER_IP}</span>
-          <span className="text-primary ml-2 flex items-center gap-1">
-            {copied
-              ? <><Icon name="Check" size={14} /> Скопировано</>
-              : <><Icon name="Copy" size={14} /> Копировать</>
-            }
-          </span>
-        </button>
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <button
+            onClick={copyIP}
+            onMouseEnter={() => setHovering(true)}
+            onMouseLeave={() => setHovering(false)}
+            className="flex items-center gap-3 border border-border bg-white/5 hover:bg-white/10 transition-colors duration-200 px-5 py-3 font-mono text-sm sm:text-base"
+          >
+            <Icon name="Server" size={16} className="text-primary" />
+            <span className="text-foreground/80">{SERVER_IP}</span>
+            <span className="text-primary ml-2 flex items-center gap-1">
+              {copied
+                ? <><Icon name="Check" size={14} /> Скопировано</>
+                : <><Icon name="Copy" size={14} /> Копировать</>
+              }
+            </span>
+          </button>
+
+          <a
+            href="https://t.me/blocscraft"
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => setHovering(true)}
+            onMouseLeave={() => setHovering(false)}
+            className="flex items-center gap-3 border border-primary bg-primary/10 hover:bg-primary/20 transition-colors duration-200 px-5 py-3 font-mono text-sm sm:text-base text-primary"
+          >
+            <Icon name="Send" size={16} />
+            <span>Telegram</span>
+          </a>
+        </div>
       </div>
     </div>
   );
