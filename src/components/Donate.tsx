@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Icon from "./ui/icon";
 
 const tiers = [
@@ -70,6 +71,8 @@ const tiers = [
 ];
 
 export function Donate() {
+  const navigate = useNavigate();
+
   return (
     <section id="donate" className="relative z-10 py-24 bg-black/60 backdrop-blur-sm">
       <div className="container">
@@ -114,14 +117,12 @@ export function Donate() {
                 ))}
               </ul>
 
-              <a
-                href="https://t.me/blocscraft"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => navigate("/donate")}
                 className={`mt-6 font-mono text-xs uppercase tracking-widest border ${tier.border} ${tier.color} px-4 py-2 text-center hover:opacity-80 transition-opacity duration-150`}
               >
                 Получить
-              </a>
+              </button>
             </div>
           ))}
         </div>
