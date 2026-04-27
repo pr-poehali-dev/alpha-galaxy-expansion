@@ -14,23 +14,12 @@ export const Logo = (props: React.SVGProps<SVGSVGElement>) => {
       {/* Server name text */}
       <text
         x="36"
-        y="28"
+        y="30"
         fill="white"
         fontFamily="Arial, sans-serif"
         fontWeight="700"
         fontSize="16"
         letterSpacing="1"
-      >
-        SURVIVAL
-      </text>
-      <text
-        x="36"
-        y="38"
-        fill="#5B9E3A"
-        fontFamily="Arial, sans-serif"
-        fontWeight="400"
-        fontSize="9"
-        letterSpacing="3"
       >
         MINECRAFT
       </text>
