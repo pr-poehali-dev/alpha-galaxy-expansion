@@ -69,11 +69,13 @@ export const MobileMenu = ({ className }: MobileMenuProps) => {
 
             <div className="mt-6">
               <a
-                href="#sign-in"
+                href="https://t.me/blocscraft"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={handleLinkClick}
                 className="inline-block text-xl font-mono uppercase text-primary transition-colors ease-out duration-150 hover:text-primary/80 py-2"
               >
-                Играть
+                Telegram
               </a>
             </div>
           </nav>

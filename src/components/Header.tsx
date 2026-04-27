@@ -26,9 +26,11 @@ export const Header = () => {
         </nav>
         <a
           className="uppercase max-lg:hidden transition-colors ease-out duration-150 font-mono text-primary hover:text-primary/80"
-          href="#join"
+          href="https://t.me/blocscraft"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Играть
+          Telegram
         </a>
         <MobileMenu />
       </header>
