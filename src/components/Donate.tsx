@@ -3,6 +3,7 @@ import Icon from "./ui/icon";
 const tiers = [
   {
     name: "VIP",
+    price: "15 ₽",
     color: "text-green-400",
     border: "border-green-400/30",
     bg: "bg-green-400/5",
@@ -15,6 +16,7 @@ const tiers = [
   },
   {
     name: "MODER",
+    price: "250 ₽",
     color: "text-blue-400",
     border: "border-blue-400/30",
     bg: "bg-blue-400/5",
@@ -27,6 +29,7 @@ const tiers = [
   },
   {
     name: "ELITA",
+    price: "500 ₽",
     color: "text-purple-400",
     border: "border-purple-400/30",
     bg: "bg-purple-400/5",
@@ -39,6 +42,7 @@ const tiers = [
   },
   {
     name: "TITAN",
+    price: "700 ₽",
     color: "text-orange-400",
     border: "border-orange-400/30",
     bg: "bg-orange-400/5",
@@ -51,6 +55,7 @@ const tiers = [
   },
   {
     name: "ULTRA",
+    price: "1000 ₽",
     color: "text-yellow-400",
     border: "border-yellow-400/30",
     bg: "bg-yellow-400/5",
@@ -93,9 +98,12 @@ export function Donate() {
                 </div>
               )}
 
-              <h3 className={`font-mono font-bold text-lg tracking-widest mb-5 ${tier.color}`}>
+              <h3 className={`font-mono font-bold text-lg tracking-widest mb-1 ${tier.color}`}>
                 {tier.name}
               </h3>
+              <p className={`font-mono text-2xl font-bold mb-5 ${tier.color}`}>
+                {tier.price}
+              </p>
 
               <ul className="flex flex-col gap-3 flex-1">
                 {tier.perks.map((perk) => (
